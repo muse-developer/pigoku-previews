@@ -1,6 +1,7 @@
 {
   "pr": 185,
-  "headSha": "94cba6067278dd0a4c226b3c10071f871dac4cc6",
+  "headSha": "9a38798",
   "source": "https://github.com/anatolimironau/piglet-puzzle/pull/185",
-  "builtAt": "2026-10-10T14:27:17.402Z"
+  "builtAt": "2026-10-10T18:15:49.000Z",
+  "note": "manual delivery (pr:deliver blocked by master-borne agents:verify policy failure outside this diff)"
 }
