@@ -680,7 +680,7 @@
         "h": 256
       }
     },
-    "cross-white-0": {
+    "daily-reminder-icon": {
       "frame": {
         "x": 512,
         "y": 1024,
@@ -700,7 +700,7 @@
         "h": 256
       }
     },
-    "cross-white-1": {
+    "cross-white-0": {
       "frame": {
         "x": 768,
         "y": 1024,
@@ -720,7 +720,7 @@
         "h": 256
       }
     },
-    "cross-white-2": {
+    "cross-white-1": {
       "frame": {
         "x": 1024,
         "y": 1024,
@@ -740,7 +740,7 @@
         "h": 256
       }
     },
-    "cross-white-3": {
+    "cross-white-2": {
       "frame": {
         "x": 1280,
         "y": 1024,
@@ -760,7 +760,7 @@
         "h": 256
       }
     },
-    "cross-red-0": {
+    "cross-white-3": {
       "frame": {
         "x": 1536,
         "y": 1024,
@@ -780,7 +780,7 @@
         "h": 256
       }
     },
-    "cross-red-1": {
+    "cross-red-0": {
       "frame": {
         "x": 1792,
         "y": 1024,
@@ -800,7 +800,7 @@
         "h": 256
       }
     },
-    "cross-red-2": {
+    "cross-red-1": {
       "frame": {
         "x": 0,
         "y": 1280,
@@ -820,7 +820,7 @@
         "h": 256
       }
     },
-    "cross-red-3": {
+    "cross-red-2": {
       "frame": {
         "x": 256,
         "y": 1280,
@@ -840,9 +840,29 @@
         "h": 256
       }
     },
-    "hoofprint": {
+    "cross-red-3": {
       "frame": {
         "x": 512,
+        "y": 1280,
+        "w": 256,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 256,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 256,
+        "h": 256
+      }
+    },
+    "hoofprint": {
+      "frame": {
+        "x": 768,
         "y": 1280,
         "w": 256,
         "h": 256
