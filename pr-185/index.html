@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <meta name="theme-color" content="#fffdf7">
+    <meta name="description" content="Pigoku: Daily Logic Puzzle is a cozy countryside logic puzzle about finding the perfect patch for every piglet.">
+    <link rel="icon" href="/pigoku-previews/pr-185/favicon.png" type="image/png">
+    <link rel="icon" href="/pigoku-previews/pr-185/art/icon.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="/pigoku-previews/pr-185/apple-touch-icon.png">
+    <link rel="preload" href="/pigoku-previews/pr-185/art/pigoku-logo.png" as="image" type="image/png">
+    <link rel="preload" href="/pigoku-previews/pr-185/art/hoofprint.webp" as="image" type="image/webp">
+    <style>
+      html, body, #game {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fffdf7;
+      }
+      canvas {
+        opacity: 0;
+      }
+      canvas.is-ready {
+        opacity: 1;
+      }
+    </style>
+    <title>Pigoku</title>
+    <script type="module" crossorigin src="/pigoku-previews/pr-185/assets/index-DvJ8sHRc.js"></script>
+    <link rel="modulepreload" crossorigin href="/pigoku-previews/pr-185/assets/phaser-De_sF23Y.js">
+    <link rel="stylesheet" crossorigin href="/pigoku-previews/pr-185/assets/index-CzXGNlX7.css">
+  </head>
+  <body>
+    <main id="game" aria-label="Pigoku: Daily Logic Puzzle game"></main>
+    <button id="back-button" class="header-floating-btn back-floating-btn" aria-label="Back" title="Back" aria-hidden="true" tabindex="-1">
+      <span class="header-btn-base" aria-hidden="true"></span>
+      <span class="header-btn-face" aria-hidden="true">
+        <span class="header-btn-sheen" aria-hidden="true"></span>
+        <svg class="header-btn-icon back-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="back-chevron-grad" cx="35%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="#7a5d45" />
+              <stop offset="60%" stop-color="#5a412e" />
+              <stop offset="100%" stop-color="#402c1d" />
+            </radialGradient>
+          </defs>
+          <!-- Outer border stroke for crisp depth -->
+          <path d="M 19 8.5 L 11.5 16 L 19 23.5" stroke="#362518" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Main Chestnut Body -->
+          <path d="M 19 8.5 L 11.5 16 L 19 23.5" stroke="url(#back-chevron-grad)" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round" />
+          <!-- Inner Specular Ridge Highlight -->
+          <path d="M 18 10.2 L 12.5 15.7 L 18 21.2" stroke="rgba(255,255,255,0.28)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </span>
+    </button>
+    <button id="settings-button" class="header-floating-btn settings-floating-btn" aria-label="Settings" title="Settings" aria-hidden="true" tabindex="-1">
+      <span class="header-btn-base" aria-hidden="true"></span>
+      <span class="header-btn-face" aria-hidden="true">
+        <span class="header-btn-sheen" aria-hidden="true"></span>
+        <svg class="header-btn-icon settings-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <radialGradient id="gear-grad" cx="35%" cy="30%" r="70%">
+              <stop offset="0%" stop-color="#7a5d45" />
+              <stop offset="60%" stop-color="#5a412e" />
+              <stop offset="100%" stop-color="#402c1d" />
+            </radialGradient>
+            <linearGradient id="clover-grad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7ea06e" />
+              <stop offset="100%" stop-color="#557548" />
+            </linearGradient>
+          </defs>
+          <g class="gear-cog">
+            <!-- 8 Rounded Teeth in Warm Chestnut -->
+            <rect x="13.5" y="2.5" width="5" height="27" rx="2.5" fill="url(#gear-grad)" />
+            <rect x="13.5" y="2.5" width="5" height="27" rx="2.5" fill="url(#gear-grad)" transform="rotate(45 16 16)" />
+            <rect x="13.5" y="2.5" width="5" height="27" rx="2.5" fill="url(#gear-grad)" transform="rotate(90 16 16)" />
+            <rect x="13.5" y="2.5" width="5" height="27" rx="2.5" fill="url(#gear-grad)" transform="rotate(135 16 16)" />
+            <!-- Gear Body Hub -->
+            <circle cx="16" cy="16" r="10.8" fill="url(#gear-grad)" />
+            <circle cx="16" cy="16" r="10.8" stroke="#362518" stroke-width="0.7" fill="none" />
+            <!-- Inner Specular Highlight -->
+            <circle cx="16" cy="15.5" r="9.2" stroke="rgba(255,255,255,0.18)" stroke-width="0.6" fill="none" />
+            <!-- Cream Core Inset matching secondary buttons -->
+            <circle cx="16" cy="16" r="6.8" fill="#fffaf0" stroke="#d5c3a5" stroke-width="0.9" />
+            <!-- Cozy Truffle Clover Gem in Center -->
+            <circle cx="16" cy="14.2" r="1.85" fill="url(#clover-grad)" />
+            <circle cx="16" cy="17.8" r="1.85" fill="url(#clover-grad)" />
+            <circle cx="14.2" cy="16" r="1.85" fill="url(#clover-grad)" />
+            <circle cx="17.8" cy="16" r="1.85" fill="url(#clover-grad)" />
+            <!-- Golden Jewel Accent -->
+            <circle cx="16" cy="16" r="1.1" fill="#e5ad42" stroke="#b88325" stroke-width="0.4" />
+            <circle cx="15.7" cy="15.7" r="0.35" fill="#ffffff" />
+          </g>
+        </svg>
+      </span>
+    </button>
+    <button id="qa-button" class="header-floating-btn qa-floating-btn" aria-label="QA" title="QA" aria-hidden="true" tabindex="-1">
+      <span class="header-btn-base" aria-hidden="true"></span>
+      <span class="header-btn-face" aria-hidden="true">
+        <span class="header-btn-sheen" aria-hidden="true"></span>
+        <span class="qa-btn-label" aria-hidden="true">QA</span>
+      </span>
+    </button>
+    <div id="game-status" class="sr-only" role="status" aria-live="polite"></div>
+  </body>
+</html>
