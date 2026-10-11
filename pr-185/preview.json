@@ -1,7 +1,7 @@
 {
   "pr": 185,
-  "headSha": "7b30e1f3",
+  "headSha": "71b84e37",
   "source": "https://github.com/anatolimironau/piglet-puzzle/pull/185",
-  "builtAt": "2026-10-11T08:05:00.000Z",
-  "note": "ch7-08 mascot stop moved east of stone per creator review; absolute Vite base /pigoku-previews/pr-185/"
+  "builtAt": "2026-10-11T08:20:00.000Z",
+  "note": "ch7-10 mascot stop moved west-below stone per creator review; absolute Vite base /pigoku-previews/pr-185/"
 }
