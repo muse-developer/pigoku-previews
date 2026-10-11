@@ -2,5 +2,6 @@
   "pr": 151,
   "headSha": "4875ab1a433cd43199ba4fefce77f50287acee8a",
   "source": "https://github.com/anatolimironau/piglet-puzzle/pull/151",
-  "builtAt": "2026-10-11T07:49:49.000Z"
+  "builtAt": "2026-10-11T08:30:00.000Z",
+  "note": "rebuilt with absolute Vite base /pigoku-previews/pr-151/ — fixes doubled asset path (404 on truffle-map-*.webp)"
 }
