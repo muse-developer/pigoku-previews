@@ -1,7 +1,7 @@
 {
   "pr": 185,
-  "headSha": "9a38798",
+  "headSha": "9a3879868690e43ac2602f50f30b1fc41f685b16",
   "source": "https://github.com/anatolimironau/piglet-puzzle/pull/185",
-  "builtAt": "2026-10-10T18:15:49.000Z",
-  "note": "manual delivery (pr:deliver blocked by master-borne agents:verify policy failure outside this diff)"
+  "builtAt": "2026-10-11T07:50:00.000Z",
+  "note": "rebuilt with absolute Vite base /pigoku-previews/pr-185/ — fixes doubled asset path (was relative base, 404 on truffle-map-*.webp)"
 }
