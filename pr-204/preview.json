@@ -1,7 +1,6 @@
 {
   "pr": 204,
-  "headSha": "24411839",
+  "headSha": "a8082291a7d2675edde945d6f5aad089e0539758",
   "source": "https://github.com/anatolimironau/piglet-puzzle/pull/204",
-  "builtAt": "2026-10-11T13:35:00.000Z",
-  "note": "shadow visibility fix: alpha 1.0, +40% size"
+  "builtAt": "2026-11-01T13:48:41.140Z"
 }
