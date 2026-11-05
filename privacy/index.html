@@ -48,14 +48,13 @@ code { font-size: 0.85em; color: var(--muted); overflow-wrap: anywhere; }
 <h2>Android backup</h2>
 <p>If backup is turned on for your device, Android may include the app's local data (progress and settings) in your device backup, which Google stores in your Google account and restores when you set up a new device. Google provides that backup under its own privacy policy; we have no access to it. You can turn backup off in your Android settings.</p>
 <h2>Notifications</h2>
-<p>The <strong>Daily Reminder</strong> is off until you choose a time. When you turn it on, Android asks for permission to show notifications. Reminders are local notifications: the app schedules them on your device and no server is involved. To keep a reminder after the device restarts and to deliver it at the chosen time, the app uses the Android permissions listed below. Turn reminders off in <strong>Settings → Daily Reminder</strong> or in Android's notification settings.</p>
+<p>The <strong>Daily Reminder</strong> is off until you choose a time. When you turn it on, Android asks for permission to show notifications. Reminders are local notifications: the app schedules them on your device and no server is involved. To deliver a reminder around the chosen time, also while the device is idle or after it restarts, the app uses the Android permissions listed below. Turn reminders off in <strong>Settings → Daily Reminder</strong> or in Android's notification settings.</p>
 <h2>Android permissions</h2>
 <table>
 <thead><tr><th>Permission</th><th>Why</th></tr></thead>
 <tbody>
 <tr><td>Show notifications (<code>POST_NOTIFICATIONS</code>)</td><td>The optional Daily Reminder</td></tr>
 <tr><td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Restore a scheduled reminder after the device restarts</td></tr>
-<tr><td>Alarms and reminders (<code>SCHEDULE_EXACT_ALARM</code>)</td><td>Deliver the reminder at the chosen time</td></tr>
 <tr><td>Prevent the device from sleeping (<code>WAKE_LOCK</code>)</td><td>Show the reminder while the device is idle</td></tr>
 <tr><td>Vibration (<code>VIBRATE</code>)</td><td>Haptic feedback in the game; turn it off in <strong>Settings → Vibration</strong></td></tr>
 </tbody>
@@ -93,14 +92,13 @@ code { font-size: 0.85em; color: var(--muted); overflow-wrap: anywhere; }
 <h2>Резервное копирование Android</h2>
 <p>Если на устройстве включено резервное копирование, Android может включить локальные данные приложения (прогресс и настройки) в резервную копию устройства, которую Google хранит в вашем аккаунте Google и восстанавливает на новом устройстве. Эту копию Google предоставляет по своей политике конфиденциальности; у нас к ней нет доступа. Резервное копирование можно отключить в настройках Android.</p>
 <h2>Уведомления</h2>
-<p><strong>Напоминание</strong> выключено, пока вы не выберете время. Когда вы его включаете, Android запрашивает разрешение на показ уведомлений. Напоминания — локальные уведомления: приложение планирует их на устройстве, сервер не участвует. Чтобы напоминание сохранилось после перезагрузки и пришло в выбранное время, приложение использует перечисленные ниже разрешения Android. Отключить напоминания можно в <strong>Настройки → Напоминание</strong> или в настройках уведомлений Android.</p>
+<p><strong>Напоминание</strong> выключено, пока вы не выберете время. Когда вы его включаете, Android запрашивает разрешение на показ уведомлений. Напоминания — локальные уведомления: приложение планирует их на устройстве, сервер не участвует. Чтобы напоминание пришло около выбранного времени, в том числе когда устройство не используется или после перезагрузки, приложение использует перечисленные ниже разрешения Android. Отключить напоминания можно в <strong>Настройки → Напоминание</strong> или в настройках уведомлений Android.</p>
 <h2>Разрешения Android</h2>
 <table>
 <thead><tr><th>Разрешение</th><th>Зачем</th></tr></thead>
 <tbody>
 <tr><td>Показ уведомлений (<code>POST_NOTIFICATIONS</code>)</td><td>Необязательное ежедневное напоминание</td></tr>
 <tr><td>Запуск при включении (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Восстановить запланированное напоминание после перезагрузки</td></tr>
-<tr><td>Будильники и напоминания (<code>SCHEDULE_EXACT_ALARM</code>)</td><td>Показать напоминание в выбранное время</td></tr>
 <tr><td>Предотвращение спящего режима (<code>WAKE_LOCK</code>)</td><td>Показать напоминание, когда устройство не используется</td></tr>
 <tr><td>Вибрация (<code>VIBRATE</code>)</td><td>Тактильный отклик в игре; отключается в <strong>Настройки → Вибрация</strong></td></tr>
 </tbody>
