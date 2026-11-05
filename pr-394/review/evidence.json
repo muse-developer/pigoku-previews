@@ -1,0 +1,98 @@
+{
+  "sourceSha": "de842c878f284dc9898759d71b557f38f3369a94",
+  "pr": 394,
+  "screenshots": [
+    {
+      "file": "stones.jpg",
+      "width": 824,
+      "height": 790,
+      "sha256": "ae9d2134740001e39792ed97fb7116e5f80dd561aefce6a63ca83b0669a4305f"
+    },
+    {
+      "file": "map-412.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "e97f7b9f05cd09dd5b6d3a466ec7ef0e7c065042f3ef70d14c1545bca6e3dfa1"
+    },
+    {
+      "file": "dense-360.jpg",
+      "width": 360,
+      "height": 640,
+      "sha256": "139711df97d16bd4fac8243c2c007941653b98d059628bc5a1b7162db9486189"
+    },
+    {
+      "file": "result.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "e9f5ae3c0fbb4661bc5e025c3eed04aeeac06c4dfe45bbf22690a7eb5eac91ed"
+    },
+    {
+      "file": "summary-ru.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "5e6fe7e0b301e0ba3b1653b9ee0b6f25b19a855d1262054246678c873bbcc8ee"
+    },
+    {
+      "file": "overview.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "16b37174588b51aa92849e88d0de1f854bcb3f7ab3559d9215012d94bb2d238e"
+    },
+    {
+      "file": "finale-10.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "4f4d61b52e27479f795af9db5034821a95175ee38ffd4e1ab0be14124b3817d3"
+    },
+    {
+      "file": "finale-1.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "fae13eb539a9cea5609baed7aadd1898b5052a08bae93d736ddef120e741727b"
+    },
+    {
+      "file": "result-replay.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "d7d7623ab487eb53a77915be8057cb7b2fa0fafdd357b2646cb9b2d5ed4d5174"
+    },
+    {
+      "file": "summary-en.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "6b35fc3fc898f449d84ae386d501ed334e94cb1b19a42538de84b4889bd8d1c4"
+    },
+    {
+      "file": "summary-de.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "369981b367bccab4caf6346d1a693fbc582b23072392b5ab0ec95d89fdd1a34a"
+    },
+    {
+      "file": "summary-ja.jpg",
+      "width": 412,
+      "height": 915,
+      "sha256": "5ef00db34f1f118abea17e17ab270ad538b3149fe8faeb8969c647e14bebf63e"
+    },
+    {
+      "file": "summary-ru-360-no-time.jpg",
+      "width": 360,
+      "height": 640,
+      "sha256": "d2a85cd807fffa299ae012f9c4594a110011be8e2e6fd0f4986fa0a13941d0ca"
+    },
+    {
+      "file": "motion.jpg",
+      "width": 780,
+      "height": 615,
+      "sha256": "b96a3ce427174f10253b005f9675594757329878e69713478f66b8b4dfee5883"
+    },
+    {
+      "file": "state.png",
+      "width": 412,
+      "height": 915,
+      "sha256": "b69ad7bf102ec998cac4da8457d9e5fac7a437049cf0064b2d76692ef243f797",
+      "role": "Exact pr:deliver screenshot, byte-for-byte public mirror"
+    }
+  ],
+  "note": "Real application captures from the named source revision; specimen uses production stone textures and production addStoneMedals. No private source or credentials are included."
+}
