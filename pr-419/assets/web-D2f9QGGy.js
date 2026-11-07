@@ -1,1 +1,0 @@
-import{f as e}from"./index-BX-Oft_z.js";var t=class extends e{async requestReview(){throw this.unimplemented(`Not implemented on web.`)}};export{t as InAppReviewWeb};
