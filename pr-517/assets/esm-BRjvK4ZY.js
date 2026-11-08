@@ -1,0 +1,2 @@
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/web-Btk-6L_-.js","assets/index-CjS7kZ08.js","assets/phaser-H7BdoIjo.js","assets/index-CZyWAA12.css"])))=>i.map(i=>d[i]);
+import{d as e,p as t}from"./index-CjS7kZ08.js";var n=t(`InAppReview`,{web:()=>e(()=>import(`./web-Btk-6L_-.js`).then(e=>new e.InAppReviewWeb),__vite__mapDeps([0,1,2,3]))});export{n as InAppReview};
