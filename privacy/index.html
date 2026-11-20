@@ -30,13 +30,14 @@ code { font-size: 0.85em; color: var(--muted); overflow-wrap: anywhere; }
 <section id="en" lang="en">
 <h1>Pigoku Privacy Policy</h1>
 <p>Effective date: 5 November 2026</p>
-<p>Pigoku is a logic puzzle game for Android made by an independent developer (&quot;we&quot;, &quot;us&quot;). This policy explains what information the app handles. The short version: <strong>Pigoku does not collect, transmit, share or sell any personal data.</strong> The app has no accounts, no ads, no analytics and no internet access.</p>
+<p>Pigoku is a logic puzzle game for Android made by an independent developer (&quot;we&quot;, &quot;us&quot;). This policy explains what information the app handles. The short version: <strong>the game itself collects nothing about you; the only data that leaves your device is what Google's ad service uses to show ads.</strong> The app has no accounts and no analytics, and we never sell personal data.</p>
 <h2>Summary</h2>
 <ul>
 <li>Pigoku does not ask for your name, email, location, contacts, photos or any other personal information.</li>
-<li>The app does not request the Android internet permission, so it cannot send anything from your device to us or to anyone else.</li>
-<li>Your game progress and settings are stored only on your device.</li>
+<li>The app shows ads through Google AdMob. To do that, Google's ad SDK uses the internet and collects some device data (see <strong>Advertising</strong>). Where the law requires it, you are asked for consent first.</li>
+<li>Your game progress and settings are stored only on your device. We never receive them.</li>
 <li>Daily reminders are optional and are scheduled on your device.</li>
+<li>From <strong>Settings → About</strong> you can open this policy in your browser and send feedback by email. Both open only when you tap them; the app sends nothing by itself.</li>
 </ul>
 <h2>Information stored on your device</h2>
 <p>To let you continue where you left off, the app saves on your device:</p>
@@ -57,30 +58,43 @@ code { font-size: 0.85em; color: var(--muted); overflow-wrap: anywhere; }
 <tr><td>Run at startup (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Restore a scheduled reminder after the device restarts</td></tr>
 <tr><td>Prevent the device from sleeping (<code>WAKE_LOCK</code>)</td><td>Show the reminder while the device is idle</td></tr>
 <tr><td>Vibration (<code>VIBRATE</code>)</td><td>Haptic feedback in the game; turn it off in <strong>Settings → Vibration</strong></td></tr>
+<tr><td>Internet and network state (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>)</td><td>Load and show ads (Google AdMob)</td></tr>
+<tr><td>Advertising ID (<code>AD_ID</code>) and Android ad services (<code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>ACCESS_ADSERVICES_TOPICS</code>)</td><td>Used by Google's ad SDK for ads and ad measurement</td></tr>
 </tbody>
 </table>
-<p>The app does not request access to the internet, location, camera, microphone, contacts, storage or the advertising ID.</p>
+<p>The app does not request access to location, camera, microphone, contacts or storage.</p>
+<h2>Advertising</h2>
+<p>Pigoku shows ads to keep the game free: an optional video you can choose to watch for extra help or to restore a Daily Meadow streak, and an occasional full-screen ad after you finish a level. Ads are served by <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited). The ad SDK runs in the app and, to show, limit and measure ads and to prevent fraud, collects automatically:</p>
+<ul>
+<li>device identifiers: the Android advertising ID and the app set ID;</li>
+<li>approximate location derived from your IP address;</li>
+<li>app and ad interactions: app launches, ads shown and taps on them;</li>
+<li>diagnostics: SDK performance and crash data.</li>
+</ul>
+<p>Google processes this data under its own policies: see <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p><strong>Your choices.</strong> In the European Economic Area, the UK and Switzerland, and wherever else the law requires it, the app asks for your consent through Google's consent form before personalised ads are shown, and you can change your choice at any time in the app's privacy options. You can reset or delete your advertising ID in Android <strong>Settings → Privacy → Ads</strong> (the wording varies by device). Without consent or with a deleted ID you may still see non-personalised ads, and the game stays fully playable without watching any video.</p>
 <h2>Third-party services</h2>
-<p>None. Pigoku contains no advertising, analytics, crash-reporting or social SDKs. It is built with open-source components (Capacitor, Phaser and i18next) that run inside the app and do not send data anywhere.</p>
+<p>Google AdMob, described in <strong>Advertising</strong>. After you finish a chapter, the app may ask Google Play to show its rating dialog (Google Play In-App Review); Google Play shows it and handles your rating under its own terms, and the app never learns whether or how you rated. Pigoku contains no analytics, crash-reporting or social SDKs. The rest of the app is built with open-source components (Capacitor, Phaser and i18next) that run inside the app and do not send data anywhere.</p>
 <h2>Children</h2>
-<p>Pigoku is suitable for all ages. It does not collect personal information from anyone, including children.</p>
+<p>Pigoku is made for players aged 13 and over and is not directed at children under 13. Ads are limited to content suitable for general audiences with parental guidance (rating PG) and are not personalised for users the ad service treats as children. We do not knowingly collect personal information from children.</p>
 <h2>Contacting us</h2>
 <p>If you email us, we use your email address and message only to reply to you, and we delete the correspondence when it is no longer needed. This is the only personal information we may receive, and only if you choose to write.</p>
 <h2>Changes to this policy</h2>
-<p>If a future version of Pigoku adds a feature that processes data (for example, ads or analytics), we will update this policy before that version is released, describe what changes and update the effective date above.</p>
+<p>If a future version of Pigoku adds a feature that processes data (for example, analytics), we will update this policy before that version is released, describe what changes and update the effective date above.</p>
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:pigokugame@gmail.com">pigokugame@gmail.com</a></p>
 </section>
 <section id="ru" lang="ru">
 <h1>Политика конфиденциальности Pigoku</h1>
 <p>Дата вступления в силу: 5 ноября 2026 года</p>
-<p>Pigoku — логическая игра-головоломка для Android от независимого разработчика («мы»). Эта политика объясняет, какую информацию обрабатывает приложение. Коротко: <strong>Pigoku не собирает, не передаёт, не раскрывает и не продаёт персональные данные.</strong> В приложении нет аккаунтов, рекламы, аналитики и доступа к интернету.</p>
+<p>Pigoku — логическая игра-головоломка для Android от независимого разработчика («мы»). Эта политика объясняет, какую информацию обрабатывает приложение. Коротко: <strong>сама игра ничего о вас не собирает; с устройства уходят только данные, которые рекламный сервис Google использует для показа рекламы.</strong> В приложении нет аккаунтов и аналитики, и мы никогда не продаём персональные данные.</p>
 <h2>Кратко</h2>
 <ul>
 <li>Pigoku не запрашивает имя, email, местоположение, контакты, фото и другую личную информацию.</li>
-<li>Приложение не запрашивает разрешение Android на доступ к интернету, поэтому не может ничего отправить с вашего устройства ни нам, ни кому-либо ещё.</li>
-<li>Прогресс игры и настройки хранятся только на вашем устройстве.</li>
+<li>Приложение показывает рекламу через Google AdMob. Для этого рекламный SDK Google пользуется интернетом и собирает некоторые данные устройства (см. <strong>Реклама</strong>). Там, где этого требует закон, сначала спрашивается согласие.</li>
+<li>Прогресс игры и настройки хранятся только на вашем устройстве. Мы их не получаем.</li>
 <li>Ежедневные напоминания необязательны и планируются на самом устройстве.</li>
+<li>В <strong>Настройки → О приложении</strong> можно открыть эту политику в браузере и отправить отзыв по email. Оба действия выполняются только по вашему нажатию; само приложение ничего не отправляет.</li>
 </ul>
 <h2>Что хранится на устройстве</h2>
 <p>Чтобы вы могли продолжить с того же места, приложение сохраняет на устройстве:</p>
@@ -101,17 +115,29 @@ code { font-size: 0.85em; color: var(--muted); overflow-wrap: anywhere; }
 <tr><td>Запуск при включении (<code>RECEIVE_BOOT_COMPLETED</code>)</td><td>Восстановить запланированное напоминание после перезагрузки</td></tr>
 <tr><td>Предотвращение спящего режима (<code>WAKE_LOCK</code>)</td><td>Показать напоминание, когда устройство не используется</td></tr>
 <tr><td>Вибрация (<code>VIBRATE</code>)</td><td>Тактильный отклик в игре; отключается в <strong>Настройки → Вибрация</strong></td></tr>
+<tr><td>Интернет и состояние сети (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>)</td><td>Загрузка и показ рекламы (Google AdMob)</td></tr>
+<tr><td>Рекламный идентификатор (<code>AD_ID</code>) и рекламные сервисы Android (<code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code>, <code>ACCESS_ADSERVICES_TOPICS</code>)</td><td>Используются рекламным SDK Google для рекламы и её измерения</td></tr>
 </tbody>
 </table>
-<p>Приложение не запрашивает доступ к интернету, местоположению, камере, микрофону, контактам, файлам и рекламному идентификатору.</p>
+<p>Приложение не запрашивает доступ к местоположению, камере, микрофону, контактам и файлам.</p>
+<h2>Реклама</h2>
+<p>Реклама позволяет игре оставаться бесплатной: необязательное видео, которое можно посмотреть ради дополнительной помощи или чтобы восстановить серию «Ежедневной поляны», и иногда полноэкранная реклама после прохождения уровня. Рекламу показывает <strong>Google AdMob</strong> (Google LLC / Google Ireland Limited). Рекламный SDK работает в приложении и, чтобы показывать, ограничивать и измерять рекламу и предотвращать мошенничество, автоматически собирает:</p>
+<ul>
+<li>идентификаторы устройства: рекламный идентификатор Android и app set ID;</li>
+<li>приблизительное местоположение по IP-адресу;</li>
+<li>действия в приложении и с рекламой: запуски приложения, показы и нажатия;</li>
+<li>диагностику: данные о работе и сбоях SDK.</li>
+</ul>
+<p>Google обрабатывает эти данные по своим правилам: см. <a href="https://policies.google.com/technologies/partner-sites?hl=ru">Как Google использует информацию с сайтов и из приложений, которые используют сервисы Google</a> и <a href="https://policies.google.com/privacy?hl=ru">Политику конфиденциальности Google</a>.</p>
+<p><strong>Ваш выбор.</strong> В Европейской экономической зоне, Великобритании и Швейцарии, а также везде, где этого требует закон, приложение через форму согласия Google спрашивает разрешение до показа персонализированной рекламы; изменить выбор можно в любой момент в настройках конфиденциальности приложения. Сбросить или удалить рекламный идентификатор можно в Android: <strong>Настройки → Конфиденциальность → Реклама</strong> (названия зависят от устройства). Без согласия или с удалённым идентификатором может показываться неперсонализированная реклама, а игра остаётся полностью доступной без просмотра видео.</p>
 <h2>Сторонние сервисы</h2>
-<p>Нет. В Pigoku нет рекламных, аналитических SDK, SDK отчётов о сбоях и социальных сетей. Игра построена на компонентах с открытым исходным кодом (Capacitor, Phaser и i18next), которые работают внутри приложения и никуда не отправляют данные.</p>
+<p>Google AdMob — см. <strong>Реклама</strong>. После прохождения главы приложение может попросить Google Play показать окно оценки (Google Play In-App Review): окно показывает Google Play, оценка обрабатывается по его правилам, а приложение не узнаёт, поставили ли вы оценку и какую. В Pigoku нет аналитических SDK, SDK отчётов о сбоях и социальных сетей. Остальное приложение построено на компонентах с открытым исходным кодом (Capacitor, Phaser и i18next), которые работают внутри приложения и никуда не отправляют данные.</p>
 <h2>Дети</h2>
-<p>Pigoku подходит для любого возраста. Приложение не собирает персональную информацию ни у кого, включая детей.</p>
+<p>Pigoku создана для игроков от 13 лет и не предназначена для детей младше 13. Реклама ограничена содержанием для широкой аудитории с родительским контролем (рейтинг PG) и не персонализируется для пользователей, которых рекламный сервис считает детьми. Мы сознательно не собираем персональную информацию детей.</p>
 <h2>Если вы нам напишете</h2>
 <p>Если вы отправите нам письмо, мы используем ваш адрес и сообщение только для ответа и удалим переписку, когда она перестанет быть нужна. Это единственная персональная информация, которую мы можем получить, и только если вы сами решите написать.</p>
 <h2>Изменения политики</h2>
-<p>Если в будущей версии Pigoku появится функция, которая обрабатывает данные (например, реклама или аналитика), мы обновим эту политику до выхода этой версии, опишем изменения и обновим дату вступления в силу.</p>
+<p>Если в будущей версии Pigoku появится функция, которая обрабатывает данные (например, аналитика), мы обновим эту политику до выхода этой версии, опишем изменения и обновим дату вступления в силу.</p>
 <h2>Контакты</h2>
 <p>Вопросы об этой политике: <a href="mailto:pigokugame@gmail.com">pigokugame@gmail.com</a></p>
 </section>
